@@ -3,6 +3,7 @@ class ProductsController <ApplicationController
   def index
     @products = Product.all
   end
+
   def new
     @product = Product.new
   end
@@ -14,6 +15,12 @@ class ProductsController <ApplicationController
     else
       render :new
     end
+  end
+
+  def  show
+
+     @product = Product.find(params[:id])
+
   end
 
   private
