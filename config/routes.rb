@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     post '/products', to: 'products#create'
     get '/products/:id', to: 'products#show', as: 'product'
     get '/products/:id/edit', to: 'products#edit'
-    ptach '/products/:id', to: 'products#update'
+    patch '/products/:id', to: 'products#update'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
